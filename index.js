@@ -5,6 +5,11 @@ const title = document.getElementById('title');
 const meaning = document.getElementById('meaning');
 const audio = document.getElementById('audio');
 
+/**
+ * Takes in a word entered in text box, if the word is found valid, returns a definition and 
+ * an audio clip of pronunciation, if not returns an error and tells to try again
+ * @param {*} word - the word entered, that is used for returning definition
+ */
 async function fetchAPI(word){
     try{
         infoText.style.display = "block";
